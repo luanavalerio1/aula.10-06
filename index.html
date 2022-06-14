@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de Web I</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+          <input id="menu-toggle" type="checkbox" />
+          <label for="menu-toggle">
+            <div class="menu-hamburger">
+              <span class="hamburger"></span>
+            </div>
+          </label>
+          <ul>
+           
+            <li>
+              <a href="tabela.html">Tabela</a>
+            </li>
+          </ul>
+        </nav>
+      </header>    
+
+
+    <main class="content">
+        <form method="POST" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Contato</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="José" />
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="jose@jose.com.br" />
+                </div>
+                <div>
+                <input type="radio" name="feminino" value="feminino" id="feminino" />
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="masculino" value="masculino" id="masculino" />
+                <label for="masculino">Masculino</label>
+            </div>
+                <label for="ano">Estado/Cidade</label>
+                <select name="estado" for=estado id="ano" required>
+                    <option></option>
+                    <option value="1">Minas Gerais</option>
+                    <option value="2">São Paulo</option>
+                    <option value="3">Rio de janeiro</option>
+                </select>
+                <input type="text" name=""  /><br />
+                <label for="arquivo">Selecione um arquivo</label>
+                <input type="file" name="arquivo[]" multiple /><br />
+                <input type="hidden" name="id" value="1" /><br />
+                <label for="arquivo">Sugestão:</label><br />
+                <textarea name="mensagem"></textarea>
+                <br />
+                <input type="image" src="./img/botao-enviar-dados.jpg" /><br />
